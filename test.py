@@ -1,7 +1,6 @@
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
 from sklearn.linear_model import LinearRegression
-
 
 dataset = pd.read_csv('Dataset/SalaryData.csv')
 
@@ -12,20 +11,20 @@ print("***************************")
 y = dataset['Salary']
 x = dataset['YearsExperience']
 
-X = x.values.reshape(len(x),1)
+X = x.values.reshape(len(x), 1)
 
 # Visualizing Data Here
-plt.scatter(X,y,c=X)
+plt.scatter(X, y, c=X)
 plt.ylabel('Salary')
 plt.xlabel('Years of Experience')
 plt.show()
 
 # Training model here
 model = LinearRegression()
-model.fit(X,y)
+model.fit(X, y)
 
 # Predicting Salary
 coeffiecient = model.coef_
 intercept = model.intercept_
 
-print(f"Maximum Salary : {(coeffiecient*1.1)[0]+intercept}")
+print(f"Maximum Salary : {(coeffiecient * 1.1)[0] + intercept}")
