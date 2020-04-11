@@ -19,10 +19,20 @@ print("******************************************************")
 print(data)
 print("******************************************************")
 
-speak.Speak("Please provide the Independent and the dependant field name down below")
+speak.Speak("Please provide the field number you want to predict down below")
 
-x_name = input("Enter IV name : ")
-y_name = input("Enter DV name : ")
+print("Which field do you want to predict? ")
+print(f"1.{data.columns[0]}")
+print(f"2.{data.columns[1]}")
+
+choice = int(input("Enter field no. :"))
+
+if choice == 1:
+    y_name = data.columns[0]
+    x_name = data.columns[1]
+else:
+    y_name = data.columns[1]
+    x_name = data.columns[0]
 
 x = data[x_name]
 y = data[y_name]
