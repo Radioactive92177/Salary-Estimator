@@ -44,10 +44,11 @@ speak.Speak(f"Please provide the the {x_name}")
 exp = float(input(f"Enter {x_name} :"))
 
 max_salary = (coeffiecient*exp)[0]+intercept
+max_salary = int(max_salary)
 
-speak.Speak(f"The maximum salary you should offer is around {max_salary:.2f}")
+speak.Speak(f"The maximum salary you should offer is around {max_salary}")
 
-print(f"* Maximum Salary : {max_salary:.2f} *")
+print(f"* Maximum Salary : {max_salary} *")
 
 
 
