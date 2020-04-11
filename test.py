@@ -12,7 +12,7 @@ print("***************************")
 y = dataset['Salary']
 x = dataset['YearsExperience']
 
-X = x.values.reshape(30,1)
+X = x.values.reshape(len(x),1)
 
 # Visualizing Data Here
 plt.scatter(X,y,c=X)

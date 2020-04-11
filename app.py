@@ -10,7 +10,7 @@ print("           Welcome to the Salary Estimator            ")
 print("******************************************************")
 print("\n")
 
-speak.Speak("Please provide the path to your dataset dow below")
+speak.Speak("Please provide the path to your data-set dow below")
 
 dataset = input("Enter path : ")
 
@@ -18,6 +18,35 @@ data = pd.read_csv(dataset)
 print("******************************************************")
 print(data)
 print("******************************************************")
+
+speak.Speak("Please provide the Independant and the dependant variable name down below")
+
+x_name = input("Enter IV name : ")
+y_name = input("Enter DV name : ")
+
+x = data[x_name]
+y = data[y_name]
+
+X = x.values.reshape(len(x),1)
+
+plt.scatter(X, y, c=X)
+plt.xlabel(x_name)
+plt.ylabel(y_name)
+plt.show()
+
+model = LinearRegression()
+model.fit(X,y)
+
+coeffiecient = model.coef_
+intercept = model.intercept_
+
+speak.Speak(f"Please provide the the {x_name}")
+exp = float(input(f"Enter {x_name} :"))
+
+speak.Speak(f"The maximum salary you should offer is around {(coeffiecient*exp)[0]+intercept}")
+print(f"Maximum Salary : {(coeffiecient*exp)[0]+intercept}")
+
+
 
 
 
