@@ -19,7 +19,7 @@ print("******************************************************")
 print(data)
 print("******************************************************")
 
-speak.Speak("Please provide the Independant and the dependant variable name down below")
+speak.Speak("Please provide the Independant and the dependant field name down below")
 
 x_name = input("Enter IV name : ")
 y_name = input("Enter DV name : ")
@@ -43,8 +43,12 @@ intercept = model.intercept_
 speak.Speak(f"Please provide the the {x_name}")
 exp = float(input(f"Enter {x_name} :"))
 
-speak.Speak(f"The maximum salary you should offer is around {(coeffiecient*exp)[0]+intercept}")
-print(f"Maximum Salary : {(coeffiecient*exp)[0]+intercept}")
+max_salary = (coeffiecient*exp)[0]+intercept
+
+speak.Speak(f"The maximum salary you should offer is around {max_salary:.2f}")
+
+print(f"* Maximum Salary : {max_salary:.2f} *")
+
 
 
 
