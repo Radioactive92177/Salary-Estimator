@@ -37,13 +37,13 @@ plt.show()
 model = LinearRegression()
 model.fit(X, y)
 
-coeffiecient = model.coef_
+coefficient = model.coef_
 intercept = model.intercept_
 
 speak.Speak(f"Please provide the the {x_name}")
 exp = float(input(f"Enter {x_name} :"))
 
-max_salary = (coeffiecient * exp)[0] + intercept
+max_salary = (coefficient * exp)[0] + intercept
 max_salary = int(max_salary)
 
 speak.Speak(f"The maximum salary you should offer is around {max_salary}")
