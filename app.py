@@ -36,7 +36,7 @@ print("           Welcome to the Salary Estimator            ")
 print("******************************************************")
 print("\n")
 
-speak.Speak("Please provide the path to your data-set dow below")
+speak.Speak("Please provide the path to your data-set down below")
 
 dataset = input("Enter path : ")
 
@@ -45,7 +45,7 @@ print("******************************************************")
 print(data)
 print("******************************************************")
 
-speak.Speak("Please provide the field number you want to predict down below")
+speak.Speak("Enter the field number you want to predict")
 
 print("Which field do you want to predict? ")
 print(f"1.{data.columns[0]}")
@@ -66,7 +66,7 @@ y = data[y_name]
 X = x.values.reshape(len(x), 1)
 
 speak.Speak("Do you want to see the graph of your data?")
-choice_graph = input("Press Y to see Graph and N to ignore and proceed to prediction ")
+choice_graph = input("Press Y to see Graph and N to ignore and proceed to prediction : ")
 
 choice_graph = choice_graph.lower()
 
