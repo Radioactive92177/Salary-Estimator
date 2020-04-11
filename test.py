@@ -10,7 +10,6 @@ print(dataset)
 print("***************************")
 
 y = dataset['Salary']
-
 x = dataset['YearsExperience']
 
 X = x.values.reshape(30,1)
@@ -24,3 +23,9 @@ plt.show()
 # Training model here
 model = LinearRegression()
 model.fit(X,y)
+
+# Predicting Salary
+coeffiecient = model.coef_
+intercept = model.intercept_
+
+print(f"Maximum Salary : {(coeffiecient*1.1)[0]+intercept}")
