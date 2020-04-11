@@ -6,6 +6,7 @@ dataset = pd.read_csv('Dataset/SalaryData.csv')
 
 # Checking Dataset
 print(dataset)
+print(type(dataset.columns[0]))
 print("***************************")
 
 y = dataset['Salary']
