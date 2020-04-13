@@ -9,3 +9,6 @@ The current version of the project have the following conditions which must be f
 	1. Only give **csv data** file to the program
 	<br>
 	2. Perform the operation in only **two columns**
+
+<br>
+please run **app.py** using the **pipenv shell** for best use
