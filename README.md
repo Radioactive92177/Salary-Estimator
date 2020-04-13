@@ -10,5 +10,5 @@ The current version of the project have the following conditions which must be f
 	<br>
 	2. Perform the operation in only **two columns**
 
-<br>
 please run **app.py** using the **pipenv shell** for best use
+<br>
