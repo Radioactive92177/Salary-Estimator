@@ -4,7 +4,7 @@ import win32com.client as wc
 from sklearn.linear_model import LinearRegression
 
 speak = wc.Dispatch("Sapi.SpVoice")
-
+#voice initialized
 
 def showData(X, y, x_name, y_name):
     plt.scatter(X, y, c=X)
