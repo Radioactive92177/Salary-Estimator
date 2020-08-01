@@ -2,7 +2,7 @@
 
 Here is a **Business Intelligence tool** which can help you set **salary** for your **new employee** based on the salaries of your **existing employees**.
 
-> [!IMPORTANT]
+> **Important:**
 > Salary Estimator works on the principle of **Linear Regression**.
 > Thus only works with ***Linear Data*** i.e. *one X and one Y only*.
 
@@ -20,7 +20,7 @@ Here is a **Business Intelligence tool** which can help you set **salary** for y
 
 6. You get an **Estimated Salary** based on your data
 
-> [!NOTE]
+> **Note:**
 > The current version of the app is only **console based**.
 > We do intend to make a **Graphical User Interface** (GUI) for the application.
 > Any contribution is **highly appreciated**
